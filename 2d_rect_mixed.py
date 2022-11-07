@@ -63,7 +63,7 @@ if __name__ == "__main__":
     gmsh.option.setNumber("Mesh.Algorithm", 5)
     gmsh.model.mesh.setRecombine(dim=2, tag=plane2)  # use quad element for plane 2
     gmsh.model.mesh.generate(dim=2)
-    gmsh.write("mesh.vtk")
+    gmsh.write("2d_rect_mixed.vtk")
 
     # Finish
     gmsh.finalize()
