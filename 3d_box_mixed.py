@@ -1,6 +1,6 @@
 """
 This script use Gmsh to generate a 3-dimensional domain meshed with
-hexahedron, tetrahedral wedge and pyramid elements in the vtk format
+hexahedron, tetrahedral, wedge and pyramid elements in the vtk format
 """
 
 import gmsh
