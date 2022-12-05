@@ -88,6 +88,7 @@ if args.gui:
     gmsh.fltk.run()
 
 nelems = args.nx * args.ny * args.nz
-gmsh.write(f"3d_hex_{nelems}.vtk")
+dim = 2 if args.nz == 1 else 3
+gmsh.write(f"{dim}d_hex_{nelems}.vtk")
 
 gmsh.finalize()
