@@ -38,10 +38,10 @@ rect = gmsh.model.geo.addPlaneSurface([loop1])
 # Set transfinite mesh
 npts_y = args.ny + 1
 npts_z = args.nz + 1
-gmsh.model.geo.mesh.setTransfiniteCurve(l1, nPoints=npts_z)
-gmsh.model.geo.mesh.setTransfiniteCurve(l2, nPoints=npts_y)
-gmsh.model.geo.mesh.setTransfiniteCurve(l3, nPoints=npts_z)
-gmsh.model.geo.mesh.setTransfiniteCurve(l4, nPoints=npts_y)
+gmsh.model.geo.mesh.setTransfiniteCurve(l1, nPoints=npts_y)
+gmsh.model.geo.mesh.setTransfiniteCurve(l2, nPoints=npts_z)
+gmsh.model.geo.mesh.setTransfiniteCurve(l3, nPoints=npts_y)
+gmsh.model.geo.mesh.setTransfiniteCurve(l4, nPoints=npts_z)
 gmsh.model.geo.mesh.setTransfiniteSurface(
     1, arrangement="Left", cornerTags=[p1, p2, p3, p4]
 )
