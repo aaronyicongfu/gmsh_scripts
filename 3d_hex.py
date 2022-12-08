@@ -21,10 +21,10 @@ ly = args.ly
 lz = args.lz
 frac = args.bc_portion
 
-p1 = gmsh.model.geo.addPoint(0, -0.5 * ly, -0.5 * lz)
-p2 = gmsh.model.geo.addPoint(0, +0.5 * ly, -0.5 * lz)
-p3 = gmsh.model.geo.addPoint(0, +0.5 * ly, +0.5 * lz)
-p4 = gmsh.model.geo.addPoint(0, -0.5 * ly, +0.5 * lz)
+p1 = gmsh.model.geo.addPoint(0.0, 0.0, 0.0)
+p2 = gmsh.model.geo.addPoint(0.0, ly, 0.0)
+p3 = gmsh.model.geo.addPoint(0.0, ly, lz)
+p4 = gmsh.model.geo.addPoint(0.0, 0.0, lz)
 
 l1 = gmsh.model.geo.addLine(p1, p2)
 l2 = gmsh.model.geo.addLine(p2, p3)
